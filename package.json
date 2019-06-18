@@ -14,6 +14,7 @@
   "scripts": {
     "compile": "truffle compile",
     "compile:testnet": "truffle compile --network thunder-testnet",
+    "compile:mainnet": "truffle compile --network thunder-mainnet",
     "migrate": "truffle migrate",
     "migrate:testnet": "truffle migrate --network thunder-testnet",
     "migrate:mainnet": "truffle migrate --network thunder-mainnet",
