@@ -50,20 +50,20 @@ module.exports = {
     "thunder-testnet": {
       provider: () => {
         if (privateKeys === null && mnemonic === null) {
-          throw new Error("Please create .private-keys or .mnemonic file");
+          throw new Error("Please create a .private-keys or .mnemonic file");
         }
 
         return privateKeys
           ? new HDWalletProvider(
               privateKeys,
               TESTNET_PROVIDER,
-              0, // <- change address_index if you want to use non-first address
+              0, // <- change address_index if you want to default to an address other than the first one
               privateKeys.length
             )
           : new HDWalletProvider(
               mnemonic,
               TESTNET_PROVIDER,
-              0 // <- change address_index if you want to use non-first address
+              0 // <- change address_index if you want to use an address other than the first one
             );
       },
       network_id: "18"
@@ -71,7 +71,7 @@ module.exports = {
     "thunder-mainnet": {
       provider: () => {
         if (privateKeys === null && mnemonic === null) {
-          throw new Error("Please create .private-keys or .mnemonic file");
+          throw new Error("Please create a .private-keys or .mnemonic file");
         }
 
         return privateKeys
@@ -103,7 +103,7 @@ module.exports = {
       settings: {
         // see the solidity docs for advice about optimization and evmversion
         optimizer: {
-          enabled: false,
+          enabled: true,
           runs: 200
         },
         evmVersion: "byzantium" // Current evm on ThunderCore fixed at "byzantium"
