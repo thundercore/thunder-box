@@ -14,7 +14,7 @@ First ensure you are in a new and empty directory. Besides, you have `nodejs` an
 npx truffle unbox thundercore/thunder-box
 ```
 
-2. Alternatively, you can install Truffle globally and run the unbox command.
+2. Alternatively, you can install Truffle globally and run the unbox command. Make sure you have truffle v 5.0.0 above.
 
 ```bash
 npm install -g truffle (yarn global add truffle)
