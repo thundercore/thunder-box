@@ -47,6 +47,13 @@ npm run migrate (yarn migrate)
 npm clean (yarn clean)
 ```
 
+7. lint your contract. The more detail of linter setting is [here](https://github.com/duaraghav8/Ethlint) 
+
+```bash
+npm run lint
+npm run lint:fix 
+```
+
 ## Develop on Thunder Testnet and Mainnet
 
 0. Get the thunder tokens  
