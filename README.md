@@ -17,7 +17,7 @@ npx truffle unbox thundercore/thunder-box
 2. Alternatively, you can install Truffle globally and run the unbox command. Make sure you have truffle v 5.0.0 above.
 
 ```bash
-npm install -g truffle (yarn global add truffle)
+npm install -g truffle # (yarn global add truffle)
 truffle unbox thundercore/thunder-box
 ```
 
@@ -37,17 +37,17 @@ migrate
 5. Alternatively, you can run the following instructions to compile and migrate the smart contracts.
 
 ```bash
-npm run compile (yarn comile)
-npm run migrate (yarn migrate)
+npm run compile # (yarn comile)
+npm run migrate # (yarn migrate)
 ```
 
 6. clean up builded contracts
 
 ```bash
-npm clean (yarn clean)
+npm clean # (yarn clean)
 ```
 
-7. lint your contract. The more detail of linter setting is [here](https://github.com/duaraghav8/Ethlint) 
+7. lint your contract. More detail regarding the linter can be found [here](https://github.com/duaraghav8/Ethlint) 
 
 ```bash
 npm run lint

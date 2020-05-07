@@ -12,8 +12,8 @@
     "smart contract"
   ],
   "dependencies": {
-    "truffle": "^5.0.22",
-    "truffle-hdwallet-provider": "^1.0.10"
+    "@truffle/hdwallet-provider": "^1.0.34",
+    "truffle": "^5.1.22"
   },
   "devDependencies": {
     "solium": "^1.2.4"
